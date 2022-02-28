@@ -4,14 +4,16 @@ class Pokemon {
         this.type = type,
         this.attack = attack
     }
-    thunderBolt = () => {
+    attackMove = () => {
         console.log(`${this.name}, used ${this.attack}`)
     }
 }
 
 const pickachu = new Pokemon("Pickachu", "Electric","Thunderbolt")
 const jolteon = new Pokemon("Jolteon", "Electric","Thunderbolt")
+const gengar = new Pokemon("Gengar",["Ghost", "Poison"], "Shadow ball")
 
 
-pickachu.thunderBolt()
-jolteon.thunderBolt()
+pickachu.attackMove()
+jolteon.attackMove()
+gengar.attackMove()
